@@ -1,0 +1,73 @@
+/* NavbarStyles.css */
+
+/* Styling for the navbar logo */
+.navbar_logo {
+    width: 100%;
+    /* Adjust the width as needed */
+    height: 50px;
+    /* Maintain aspect ratio */
+}
+
+.nav_link {
+    float: right;
+}
+
+.nav-title {
+    font-size: 19px;
+    font-weight: 800;
+    color: rgb(96, 2, 133);
+    font-family: " gothamhtf-medium";
+}
+
+
+.NavStyle {
+    border-radius: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 105%;
+    max-width: 300px;
+    font-size: medium;
+    box-shadow: 0 14px 28px #8f9cd4, 0 10px 10px #8f9cd4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:5px;
+}
+
+.list-item {
+    list-style-type: none;
+    flex-basis: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #555;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --highlight: #5756e6;
+}
+
+.Nav-name:hover {
+    color: var(--highlight);
+    transform: translateY(-6px);
+}
+
+.Nav-name:hover .Nav-name {
+    transform: translateY(20px);
+    opacity: 1;
+}
+
+.header-bg {
+    background-color: #ffffff;
+    border-radius: 150%;
+    padding: 20px;
+    /* padding-top: 20px; */
+}
