@@ -1,0 +1,44 @@
+/* Styles required only for the example above */
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
+
+.custom-card {
+    width: 18rem;
+    border: none;
+    /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    /* Apply box shadow */
+    transform: perspective(1000px) rotateX(0.5deg);
+    /* Apply subtle 3D rotation */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Add transition for smooth effect */
+}
+
+.custom-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+    /* Adjust shadow on hover for more pronounced effect */
+    transform: perspective(1000px) rotateX(1deg);
+    /* Increase rotation on hover */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+    background-color: #fff;
+}
